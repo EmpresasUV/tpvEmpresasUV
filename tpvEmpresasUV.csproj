@@ -11,12 +11,38 @@
   <ItemGroup>
     <Folder Include="add\xml\" />
     <Folder Include="add\pdf\" />
-    <Folder Include="clases\" />
     <Folder Include="librerias\iconos\" />
     <Folder Include="librerias\imagenes\" />
     <Folder Include="modelos\" />
-    <Folder Include="vistas\admon\" />
-    <Folder Include="vistas\tpv\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ARSoftware.Contpaqi.Comercial.Sdk" Version="6.2.1" />
+    <PackageReference Include="ARSoftware.Contpaqi.Comercial.Sdk.Extras" Version="6.2.1" />
+    <PackageReference Include="ARSoftware.Contpaqi.Comercial.Sql.Models" Version="6.2.1" />
+    <PackageReference Include="Krypton.Ribbon" Version="90.25.2.55" />
+    <PackageReference Include="Krypton.Toolkit" Version="90.25.2.55" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="librerias\iconos\favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
