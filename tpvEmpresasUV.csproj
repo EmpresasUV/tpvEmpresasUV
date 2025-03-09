@@ -8,4 +8,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="add\xml\" />
+    <Folder Include="add\pdf\" />
+    <Folder Include="clases\" />
+    <Folder Include="librerias\iconos\" />
+    <Folder Include="librerias\imagenes\" />
+    <Folder Include="modelos\" />
+    <Folder Include="vistas\admon\" />
+    <Folder Include="vistas\tpv\" />
+  </ItemGroup>
+
 </Project>
