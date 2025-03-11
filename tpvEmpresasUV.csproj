@@ -6,13 +6,16 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>librerias\iconos\favicon.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="librerias\iconos\favicon.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="add\xml\" />
     <Folder Include="add\pdf\" />
-    <Folder Include="librerias\iconos\" />
-    <Folder Include="librerias\imagenes\" />
     <Folder Include="modelos\" />
   </ItemGroup>
 

@@ -18,6 +18,16 @@ namespace tpvEmpresasUV
             InitializeComponent();
         }
 
-
+        private void MainMDI_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                
+            }
+            catch (Exception ex)
+            {
+                new appExeption(ex);
+            }
+        }
     }
 }

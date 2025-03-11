@@ -13,12 +13,26 @@ namespace tpvEmpresasUV
         {
             try
             {
-            
+
             }
             catch (Exception ex)
             {
                 new appExeption(ex);
             }
+        }
+
+        private void Splash_Load(object sender, EventArgs e)
+        {
+            
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+                new appExeption(ex);
+            }
+
         }
     }
 }

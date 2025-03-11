@@ -44,7 +44,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ButtonSpecs.Add(cmd_AYUDA);
-            ClientSize = new Size(608, 572);
+            ClientSize = new Size(660, 620);
+            CloseBox = false;
             Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
             Margin = new Padding(4, 3, 4, 3);
@@ -54,6 +55,7 @@
             Text = "Empresas UV";
             TransparencyKey = Color.Empty;
             WindowState = FormWindowState.Maximized;
+            Load += MainMDI_Load;
             ResumeLayout(false);
 
         }
