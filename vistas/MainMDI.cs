@@ -13,6 +13,7 @@ namespace tpvEmpresasUV
 {
     public partial class MainMDI : KryptonForm
     {
+        public bool usr_loged = false;
         public MainMDI()
         {
             InitializeComponent();
@@ -22,7 +23,17 @@ namespace tpvEmpresasUV
         {
             try
             {
-                
+                if (!usr_loged)
+                {
+                    using (var frm_login = new MainLOGIN())
+                    {
+                        var result = frm_login.ShowDialog();
+                        if (result == DialogResult.OK)
+                        {
+                            this.usr_loged = true;
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
