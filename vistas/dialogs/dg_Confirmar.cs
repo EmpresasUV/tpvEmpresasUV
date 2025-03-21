@@ -1,5 +1,4 @@
 ﻿using System;
-using Krypton.Toolkit;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,14 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Krypton.Toolkit;
 
 namespace tpvEmpresasUV
 {
-    public partial class appEx: KryptonForm
+    public partial class dg_Confirmar: KryptonForm
     {
-        public appEx()
+        public dg_Confirmar()
         {
             InitializeComponent();
+            this.Size = new Size(335, 385);
         }
     }
 }

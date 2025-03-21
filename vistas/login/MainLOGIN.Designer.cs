@@ -33,10 +33,10 @@
             kryptonPictureBox1 = new Krypton.Toolkit.KryptonPictureBox();
             cmd_ACEPTAR = new Krypton.Toolkit.KryptonButton();
             cmd_CANCELAR = new Krypton.Toolkit.KryptonButton();
-            kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
+            txt_ID = new Krypton.Toolkit.KryptonTextBox();
             kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
-            kryptonTextBox2 = new Krypton.Toolkit.KryptonTextBox();
+            txt_PASS = new Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)kryptonPictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -51,7 +51,7 @@
             kryptonPictureBox1.Image = Properties.Resources.lock_3;
             kryptonPictureBox1.Location = new Point(0, 0);
             kryptonPictureBox1.Name = "kryptonPictureBox1";
-            kryptonPictureBox1.Size = new Size(254, 151);
+            kryptonPictureBox1.Size = new Size(249, 151);
             kryptonPictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             kryptonPictureBox1.TabIndex = 0;
             kryptonPictureBox1.TabStop = false;
@@ -65,6 +65,7 @@
             cmd_ACEPTAR.Values.DropDownArrowColor = Color.Empty;
             cmd_ACEPTAR.Values.Image = Properties.Resources.mark;
             cmd_ACEPTAR.Values.Text = "&Acceder";
+            cmd_ACEPTAR.Click += cmd_ACEPTAR_Click;
             // 
             // cmd_CANCELAR
             // 
@@ -75,14 +76,15 @@
             cmd_CANCELAR.Values.DropDownArrowColor = Color.Empty;
             cmd_CANCELAR.Values.Image = Properties.Resources.cross;
             cmd_CANCELAR.Values.Text = "&Cancelar";
+            cmd_CANCELAR.Click += cmd_CANCELAR_Click;
             // 
-            // kryptonTextBox1
+            // txt_ID
             // 
-            kryptonTextBox1.Location = new Point(10, 188);
-            kryptonTextBox1.Name = "kryptonTextBox1";
-            kryptonTextBox1.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
-            kryptonTextBox1.Size = new Size(228, 23);
-            kryptonTextBox1.TabIndex = 3;
+            txt_ID.Location = new Point(10, 188);
+            txt_ID.Name = "txt_ID";
+            txt_ID.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
+            txt_ID.Size = new Size(228, 23);
+            txt_ID.TabIndex = 3;
             // 
             // kryptonLabel1
             // 
@@ -102,28 +104,28 @@
             kryptonLabel2.TabIndex = 7;
             kryptonLabel2.Values.Text = "Contraseña asignada";
             // 
-            // kryptonTextBox2
+            // txt_PASS
             // 
-            kryptonTextBox2.Location = new Point(11, 241);
-            kryptonTextBox2.Name = "kryptonTextBox2";
-            kryptonTextBox2.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
-            kryptonTextBox2.PasswordChar = '●';
-            kryptonTextBox2.Size = new Size(228, 23);
-            kryptonTextBox2.TabIndex = 6;
-            kryptonTextBox2.TextAlign = HorizontalAlignment.Center;
+            txt_PASS.Location = new Point(11, 241);
+            txt_PASS.Name = "txt_PASS";
+            txt_PASS.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
+            txt_PASS.PasswordChar = '●';
+            txt_PASS.Size = new Size(228, 23);
+            txt_PASS.TabIndex = 6;
+            txt_PASS.TextAlign = HorizontalAlignment.Center;
             // 
             // MainLOGIN
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ButtonSpecs.Add(cmd_AYUDA);
-            ClientSize = new Size(254, 325);
+            ClientSize = new Size(249, 325);
             CloseBox = false;
             ControlBox = false;
             Controls.Add(kryptonLabel2);
-            Controls.Add(kryptonTextBox2);
+            Controls.Add(txt_PASS);
             Controls.Add(kryptonLabel1);
-            Controls.Add(kryptonTextBox1);
+            Controls.Add(txt_ID);
             Controls.Add(cmd_CANCELAR);
             Controls.Add(cmd_ACEPTAR);
             Controls.Add(kryptonPictureBox1);
@@ -149,9 +151,9 @@
         private Krypton.Toolkit.KryptonPictureBox kryptonPictureBox1;
         private Krypton.Toolkit.KryptonButton cmd_ACEPTAR;
         private Krypton.Toolkit.KryptonButton cmd_CANCELAR;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private Krypton.Toolkit.KryptonTextBox txt_ID;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private Krypton.Toolkit.KryptonLabel kryptonLabel2;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
+        private Krypton.Toolkit.KryptonTextBox txt_PASS;
     }
 }

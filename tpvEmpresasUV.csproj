@@ -25,6 +25,7 @@
     <PackageReference Include="ARSoftware.Contpaqi.Comercial.Sql.Models" Version="6.2.1" />
     <PackageReference Include="Krypton.Ribbon" Version="90.25.2.55" />
     <PackageReference Include="Krypton.Toolkit" Version="90.25.2.55" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
   </ItemGroup>
 
   <ItemGroup>
