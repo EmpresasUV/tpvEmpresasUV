@@ -37,9 +37,9 @@ namespace tpvEmpresasUV
             try
             {
                 dbSQL MyDB = new dbSQL();
-                Task<JsonArray> x;
+                JsonObject x;
                 x = MyDB.QueryJson("SELECT TOP 1000 * FROM [dbo].[tpv_usuarios]");
-
+                Console.WriteLine();
             }
             catch (Exception ex)
             {

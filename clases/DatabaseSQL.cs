@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices.JavaScript;
 using System.Text;
@@ -35,27 +37,38 @@ namespace tpvEmpresasUV
             }
         }
 
-        public async Task<JsonArray> QueryJson(string query)
+        public JsonObject QueryJson(string query)
         {
-            var results = new JsonArray();
+            var results = new JsonObject();
             try
             {
                 using (var connection = new SqlConnection(ConnectionString))
                 {
-                    await connection.OpenAsync();
+                    connection.Open();
                     using (var command = new SqlCommand(query, connection))
-                    using (var reader = await command.ExecuteReaderAsync())
+                    using (var reader = command.ExecuteReader())
                     {
-                        while (await reader.ReadAsync())
+                        var keyIndex = 0;
+                        while (reader.Read())
                         {
-                            Console.WriteLine("{0}\t{1}", reader.GetInt32(0), reader.GetString(1));                          
-                            var item = new JsonObject()
+                            if (reader.HasRows)
                             {
-                                [reader.GetInt32(0)] = reader.GetString(1),
-                            };
-                            results.Add(item);
+                                var item = new JsonObject();
+                                // Iterate over each of the fields (columns) in the datareader's current record
+                                for (int i = 0; i < reader.FieldCount; i++)
+                                {
+                                    //Debug.WriteLine("El campo {0} es de tipo {1} y posée el valor {2}", reader.GetName(i), reader.GetDataTypeName(i), reader[i].ToString());                               
+
+                                    item.Add(reader.GetName(i).ToString(), reader[i].ToString());
+                                }
+                                
+                                results.Add(keyIndex.ToString(), item);
+                                keyIndex++;
+                            }
                         }
+
                     }
+                    Debug.WriteLine(results);
                 }
             }
             catch (SqlException SQLex)
