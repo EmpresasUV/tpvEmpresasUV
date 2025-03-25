@@ -9,6 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.Json.Nodes;
+using TpvEmpresasUV.modelos;
+using System.Diagnostics;
+using tpvEmpresasUV.Properties;
 
 namespace tpvEmpresasUV
 {
@@ -36,10 +39,14 @@ namespace tpvEmpresasUV
         {
             try
             {
-                dbSQL MyDB = new dbSQL();
-                JsonObject x;
-                x = MyDB.QueryJson("SELECT TOP 1000 * FROM [dbo].[tpv_usuarios]");
-                Console.WriteLine();
+                using(dbEmpresasUVContexto dbEmpresasUV = new dbEmpresasUVContexto())
+                {
+                    foreach (var oUsuarios in dbEmpresasUV.TpvUsuarios)
+                    {
+                        Debug.WriteLine(oUsuarios.Nombres);
+                    }
+                }
+
             }
             catch (Exception ex)
             {

@@ -2,6 +2,7 @@ using Krypton.Toolkit;
 
 namespace tpvEmpresasUV
 {
+    
     static class Program
     {
 
@@ -24,6 +25,7 @@ namespace tpvEmpresasUV
             Thread.Sleep(5000);
             
             
+            
             //Create and Show Main Form
             MyMainMDI = new MainMDI();
             MyMainMDI.Load += MainForm_LoadCompleted;
@@ -37,6 +39,7 @@ namespace tpvEmpresasUV
             MyMainMDI.TopMost = true;
             MyMainMDI.Activate();
             MyMainMDI.TopMost = false;
+            
         }
 
 

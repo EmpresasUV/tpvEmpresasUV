@@ -46,7 +46,7 @@
             kryptonPictureBox1.Image = Properties.Resources.asistente_5;
             kryptonPictureBox1.Location = new Point(0, 0);
             kryptonPictureBox1.Name = "kryptonPictureBox1";
-            kryptonPictureBox1.Size = new Size(279, 159);
+            kryptonPictureBox1.Size = new Size(327, 159);
             kryptonPictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             kryptonPictureBox1.TabIndex = 2;
             kryptonPictureBox1.TabStop = false;
@@ -56,18 +56,19 @@
             kryptonPanel1.Controls.Add(cmd_INFORMAR);
             kryptonPanel1.Controls.Add(cmd_ACEPTAR);
             kryptonPanel1.Dock = DockStyle.Bottom;
-            kryptonPanel1.Location = new Point(0, 331);
+            kryptonPanel1.Location = new Point(0, 327);
             kryptonPanel1.Name = "kryptonPanel1";
-            kryptonPanel1.Size = new Size(279, 45);
+            kryptonPanel1.Size = new Size(327, 39);
             kryptonPanel1.TabIndex = 3;
             // 
             // cmd_INFORMAR
             // 
             cmd_INFORMAR.DialogResult = DialogResult.Continue;
-            cmd_INFORMAR.Location = new Point(181, 5);
+            cmd_INFORMAR.Dock = DockStyle.Right;
+            cmd_INFORMAR.Location = new Point(237, 0);
             cmd_INFORMAR.Name = "cmd_INFORMAR";
             cmd_INFORMAR.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
-            cmd_INFORMAR.Size = new Size(90, 37);
+            cmd_INFORMAR.Size = new Size(90, 39);
             cmd_INFORMAR.TabIndex = 2;
             cmd_INFORMAR.Values.DropDownArrowColor = Color.Empty;
             cmd_INFORMAR.Values.Image = Properties.Resources.comments_add;
@@ -76,10 +77,11 @@
             // cmd_ACEPTAR
             // 
             cmd_ACEPTAR.DialogResult = DialogResult.OK;
-            cmd_ACEPTAR.Location = new Point(6, 5);
+            cmd_ACEPTAR.Dock = DockStyle.Left;
+            cmd_ACEPTAR.Location = new Point(0, 0);
             cmd_ACEPTAR.Name = "cmd_ACEPTAR";
             cmd_ACEPTAR.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
-            cmd_ACEPTAR.Size = new Size(90, 37);
+            cmd_ACEPTAR.Size = new Size(90, 39);
             cmd_ACEPTAR.TabIndex = 1;
             cmd_ACEPTAR.Values.DropDownArrowColor = Color.Empty;
             cmd_ACEPTAR.Values.Image = Properties.Resources.mark;
@@ -91,7 +93,7 @@
             lbl_titulo.Dock = DockStyle.Top;
             lbl_titulo.Location = new Point(0, 159);
             lbl_titulo.Name = "lbl_titulo";
-            lbl_titulo.Size = new Size(279, 47);
+            lbl_titulo.Size = new Size(327, 47);
             lbl_titulo.StateCommon.ShortText.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_titulo.StateCommon.ShortText.TextH = Krypton.Toolkit.PaletteRelativeAlign.Center;
             lbl_titulo.StateCommon.ShortText.TextV = Krypton.Toolkit.PaletteRelativeAlign.Center;
@@ -105,7 +107,7 @@
             txt_error.Multiline = true;
             txt_error.Name = "txt_error";
             txt_error.PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
-            txt_error.Size = new Size(279, 125);
+            txt_error.Size = new Size(327, 121);
             txt_error.TabIndex = 5;
             txt_error.TextAlign = HorizontalAlignment.Center;
             // 
@@ -114,7 +116,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 244, 244);
-            ClientSize = new Size(279, 376);
+            ClientSize = new Size(327, 366);
             ControlBox = false;
             Controls.Add(txt_error);
             Controls.Add(lbl_titulo);
