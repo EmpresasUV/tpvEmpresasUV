@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace tpvEmpresasUV
 {
-    class appDialogos
+    class AppDialogos
     {
-        public appDialogos()
+        public AppDialogos()
         {
             try
             {
@@ -16,7 +16,7 @@ namespace tpvEmpresasUV
             }
             catch (Exception ex)
             {
-                new appExeption(ex);
+                new AppExeption(ex);
             }
         }
 

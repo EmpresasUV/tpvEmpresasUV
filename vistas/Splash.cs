@@ -17,7 +17,7 @@ namespace tpvEmpresasUV
             }
             catch (Exception ex)
             {
-                new appExeption(ex);
+                new AppExeption(ex);
             }
         }
 
@@ -30,7 +30,7 @@ namespace tpvEmpresasUV
             }
             catch (Exception ex)
             {
-                new appExeption(ex);
+                new AppExeption(ex);
             }
 
         }

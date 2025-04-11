@@ -22,10 +22,9 @@ namespace tpvEmpresasUV
         {
             InitializeComponent();
             this.Size = new Size(263, 370);
-            appBiometricos MyHUELLAS = new appBiometricos();
         }
 
-        private void cmd_CANCELAR_Click(object sender, EventArgs e)
+        private void Cmd_CANCELAR_Click(object sender, EventArgs e)
         {
             try
             {
@@ -33,14 +32,16 @@ namespace tpvEmpresasUV
             }
             catch (Exception ex)
             {
-                new appExeption(ex);
+                new AppExeption(ex);
             }
         }
 
-        private void cmd_ACEPTAR_Click(object sender, EventArgs e)
+        private void Cmd_ACEPTAR_Click(object sender, EventArgs e)
         {
             try
             {
+
+
                 using(dbEmpresasUVContexto dbEmpresasUV = new dbEmpresasUVContexto())
                 {
                     foreach (var oUsuarios in dbEmpresasUV.TpvUsuarios)
@@ -52,7 +53,7 @@ namespace tpvEmpresasUV
             }
             catch (Exception ex)
             {
-                new appExeption(ex);
+                new AppExeption(ex);
             }
         }
     }

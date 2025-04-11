@@ -7,9 +7,9 @@ using Microsoft.Data.SqlClient;
 
 namespace tpvEmpresasUV
 {
-    class appExeption
+    class AppExeption
     {
-        public appExeption(Exception EX)
+        public AppExeption(Exception EX)
         {
             using (var frm_error = new appEx())
             {
@@ -20,7 +20,7 @@ namespace tpvEmpresasUV
                 }
             }
         }
-        public appExeption(SqlException SQLex)
+        public AppExeption(SqlException SQLex)
         {
             using (var frm_error = new appEx())
             {

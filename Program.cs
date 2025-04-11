@@ -22,12 +22,17 @@ namespace tpvEmpresasUV
             splashThread.Start();
             
             
-            Thread.Sleep(3000);
-            
-            
-            
+            Thread.Sleep(2000);
+
+            var screen = Screen.PrimaryScreen;
+            string screenWidth = screen.Bounds.Width.ToString();
+            string screenHeight = screen.Bounds.Height.ToString();
+
+
             //Create and Show Main Form
             MyMainMDI = new MainMDI();
+            MyMainMDI.Width = (Convert.ToInt32(screenWidth) - 4);
+            MyMainMDI.Height = (Convert.ToInt32(screenHeight) - 48);
             MyMainMDI.Load += MainForm_LoadCompleted;
             Application.Run(MyMainMDI);
         }

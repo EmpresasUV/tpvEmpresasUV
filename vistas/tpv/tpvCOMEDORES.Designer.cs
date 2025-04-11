@@ -54,19 +54,19 @@
             cmd_CM_INTERNO = new Krypton.Ribbon.KryptonRibbonGroupButton();
             kryptonStatusStrip1 = new Krypton.Toolkit.KryptonStatusStrip();
             kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
+            Panel_CHAT = new Krypton.Toolkit.KryptonPanel();
+            kryptonTextBox2 = new Krypton.Toolkit.KryptonTextBox();
             Header1 = new Krypton.Toolkit.KryptonHeader();
             kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
             kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
-            Panel_CHAT = new Krypton.Toolkit.KryptonPanel();
-            kryptonTextBox2 = new Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)Ribbon_TIENDAS).BeginInit();
             ((System.ComponentModel.ISupportInitialize)kryptonPanel1).BeginInit();
             kryptonPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)kryptonPanel2).BeginInit();
-            kryptonPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Panel_CHAT).BeginInit();
             Panel_CHAT.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)kryptonPanel2).BeginInit();
+            kryptonPanel2.SuspendLayout();
             SuspendLayout();
             // 
             // Manager
@@ -80,7 +80,7 @@
             Ribbon_TIENDAS.RibbonFileAppTab.FileAppTabText = "Sistema";
             Ribbon_TIENDAS.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] { kryptonRibbonTab1 });
             Ribbon_TIENDAS.SelectedTab = kryptonRibbonTab1;
-            Ribbon_TIENDAS.Size = new Size(967, 115);
+            Ribbon_TIENDAS.Size = new Size(991, 115);
             Ribbon_TIENDAS.TabIndex = 1;
             // 
             // kryptonRibbonTab1
@@ -177,11 +177,11 @@
             // kryptonStatusStrip1
             // 
             kryptonStatusStrip1.Font = new Font("Segoe UI", 9F);
-            kryptonStatusStrip1.Location = new Point(0, 622);
+            kryptonStatusStrip1.Location = new Point(0, 550);
             kryptonStatusStrip1.Name = "kryptonStatusStrip1";
             kryptonStatusStrip1.ProgressBars = null;
             kryptonStatusStrip1.RenderMode = ToolStripRenderMode.ManagerRenderMode;
-            kryptonStatusStrip1.Size = new Size(967, 22);
+            kryptonStatusStrip1.Size = new Size(991, 22);
             kryptonStatusStrip1.TabIndex = 2;
             kryptonStatusStrip1.Text = "kryptonStatusStrip1";
             // 
@@ -191,10 +191,27 @@
             kryptonPanel1.Controls.Add(Header1);
             kryptonPanel1.Controls.Add(kryptonPanel2);
             kryptonPanel1.Dock = DockStyle.Right;
-            kryptonPanel1.Location = new Point(746, 115);
+            kryptonPanel1.Location = new Point(770, 115);
             kryptonPanel1.Name = "kryptonPanel1";
-            kryptonPanel1.Size = new Size(221, 507);
+            kryptonPanel1.Size = new Size(221, 435);
             kryptonPanel1.TabIndex = 3;
+            // 
+            // Panel_CHAT
+            // 
+            Panel_CHAT.Controls.Add(kryptonTextBox2);
+            Panel_CHAT.Dock = DockStyle.Fill;
+            Panel_CHAT.Location = new Point(0, 36);
+            Panel_CHAT.Name = "Panel_CHAT";
+            Panel_CHAT.Size = new Size(221, 332);
+            Panel_CHAT.TabIndex = 4;
+            // 
+            // kryptonTextBox2
+            // 
+            kryptonTextBox2.Location = new Point(3, 2);
+            kryptonTextBox2.Multiline = true;
+            kryptonTextBox2.Name = "kryptonTextBox2";
+            kryptonTextBox2.Size = new Size(174, 138);
+            kryptonTextBox2.TabIndex = 2;
             // 
             // Header1
             // 
@@ -211,7 +228,7 @@
             kryptonPanel2.Controls.Add(kryptonButton1);
             kryptonPanel2.Controls.Add(kryptonTextBox1);
             kryptonPanel2.Dock = DockStyle.Bottom;
-            kryptonPanel2.Location = new Point(0, 440);
+            kryptonPanel2.Location = new Point(0, 368);
             kryptonPanel2.Name = "kryptonPanel2";
             kryptonPanel2.Size = new Size(221, 67);
             kryptonPanel2.TabIndex = 2;
@@ -233,45 +250,36 @@
             kryptonTextBox1.Size = new Size(174, 63);
             kryptonTextBox1.TabIndex = 2;
             // 
-            // Panel_CHAT
-            // 
-            Panel_CHAT.Controls.Add(kryptonTextBox2);
-            Panel_CHAT.Dock = DockStyle.Fill;
-            Panel_CHAT.Location = new Point(0, 36);
-            Panel_CHAT.Name = "Panel_CHAT";
-            Panel_CHAT.Size = new Size(221, 404);
-            Panel_CHAT.TabIndex = 4;
-            // 
-            // kryptonTextBox2
-            // 
-            kryptonTextBox2.Location = new Point(3, 2);
-            kryptonTextBox2.Multiline = true;
-            kryptonTextBox2.Name = "kryptonTextBox2";
-            kryptonTextBox2.Size = new Size(174, 138);
-            kryptonTextBox2.TabIndex = 2;
-            // 
             // tpvCOMEDORES
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(967, 644);
+            ClientSize = new Size(991, 572);
             CloseBox = false;
             Controls.Add(kryptonPanel1);
             Controls.Add(kryptonStatusStrip1);
             Controls.Add(Ribbon_TIENDAS);
             Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "tpvCOMEDORES";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            StartPosition = FormStartPosition.Manual;
             Text = "TPV Comedores UV";
+            TopMost = true;
+            TransparencyKey = Color.Empty;
+            WindowState = FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)Ribbon_TIENDAS).EndInit();
             ((System.ComponentModel.ISupportInitialize)kryptonPanel1).EndInit();
             kryptonPanel1.ResumeLayout(false);
             kryptonPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)kryptonPanel2).EndInit();
-            kryptonPanel2.ResumeLayout(false);
-            kryptonPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)Panel_CHAT).EndInit();
             Panel_CHAT.ResumeLayout(false);
             Panel_CHAT.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)kryptonPanel2).EndInit();
+            kryptonPanel2.ResumeLayout(false);
+            kryptonPanel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
 
