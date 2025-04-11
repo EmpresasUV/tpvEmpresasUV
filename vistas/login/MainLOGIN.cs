@@ -12,6 +12,7 @@ using System.Text.Json.Nodes;
 using TpvEmpresasUV.modelos;
 using System.Diagnostics;
 using tpvEmpresasUV.Properties;
+using tpvEmpresasUV.clases;
 
 namespace tpvEmpresasUV
 {
@@ -21,6 +22,7 @@ namespace tpvEmpresasUV
         {
             InitializeComponent();
             this.Size = new Size(263, 370);
+            appBiometricos MyHUELLAS = new appBiometricos();
         }
 
         private void cmd_CANCELAR_Click(object sender, EventArgs e)

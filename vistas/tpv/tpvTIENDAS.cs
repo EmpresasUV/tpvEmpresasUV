@@ -11,11 +11,21 @@ using System.Windows.Forms;
 
 namespace tpvEmpresasUV
 {
-    public partial class tpvTIENDAS: KryptonForm
+    public partial class tpvTIENDAS : KryptonForm
     {
         public tpvTIENDAS()
         {
             InitializeComponent();
+        }
+
+        private void kryptonRibbon1_SelectedTabChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Ribbon_TIENDAS_SelectedTabChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
