@@ -41,7 +41,7 @@ namespace tpvEmpresasUV
             try
             {
 
-
+                /*
                 using(dbEmpresasUVContexto dbEmpresasUV = new dbEmpresasUVContexto())
                 {
                     foreach (var oUsuarios in dbEmpresasUV.TpvUsuarios)
@@ -49,7 +49,8 @@ namespace tpvEmpresasUV
                         Debug.WriteLine(oUsuarios.Nombres);
                     }
                 }
-
+                */
+                this.DialogResult = DialogResult.OK;
             }
             catch (Exception ex)
             {

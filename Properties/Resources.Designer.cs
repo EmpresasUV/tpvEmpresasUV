@@ -183,6 +183,16 @@ namespace tpvEmpresasUV.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bgEmpresas_AZUL {
+            get {
+                object obj = ResourceManager.GetObject("bgEmpresas-AZUL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap comments_add {
             get {
                 object obj = ResourceManager.GetObject("comments-add", resourceCulture);
@@ -206,6 +216,16 @@ namespace tpvEmpresasUV.Properties {
         internal static System.Drawing.Bitmap EmpresasUV {
             get {
                 object obj = ResourceManager.GetObject("EmpresasUV", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fondo_EMPRESASUV {
+            get {
+                object obj = ResourceManager.GetObject("Fondo-EMPRESASUV", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

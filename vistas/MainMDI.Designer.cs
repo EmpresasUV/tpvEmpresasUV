@@ -43,8 +43,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.CornflowerBlue;
+            BackgroundImage = Properties.Resources.bgEmpresas_AZUL;
+            BackgroundImageLayout = ImageLayout.Zoom;
             ButtonSpecs.Add(cmd_AYUDA);
-            ClientSize = new Size(664, 608);
+            ClientSize = new Size(776, 691);
             CloseBox = false;
             Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
@@ -53,8 +56,10 @@
             PaletteMode = Krypton.Toolkit.PaletteMode.Office2007Blue;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Empresas UV";
+            TopMost = true;
             TransparencyKey = Color.Empty;
             Load += MainMDI_Load;
+            Resize += MainMDI_Resize;
             ResumeLayout(false);
 
         }
